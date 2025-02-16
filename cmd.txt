@@ -1,5 +1,11 @@
-# install a package locally. Run these cmd in the same folder where the toml file is.
+# Run the following cmds in the same folder where the toml file is stored.
+
+# install a package locally. 
 python -m pip install -e .
+
+# Build and upload package to PyPI
+# The build command generates the wheel and the gz files, and stores them in the dist/ folder
+# Twine uploads the package.
 python -m pip install --upgrade build
 python -m build
 python -m pip install --upgrade twine
